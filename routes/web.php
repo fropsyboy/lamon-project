@@ -11,10 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Auth::routes();
-
+// Auth::routes();
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', 'HomeController@about')->name('about');
+Route::get('/blog', 'HomeController@blog')->name('blog');
+Route::get('/cart', 'HomeController@cart')->name('cart');
+Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::get('/menu', 'HomeController@menu')->name('menu');
+Route::get('/single-blog', 'HomeController@singleBlog')->name('single-blog');
+
