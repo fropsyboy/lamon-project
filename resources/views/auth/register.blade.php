@@ -1,4 +1,23 @@
-@extends('layouts.app')
+@extends('layouts.auth')
+
+@section('logo')
+    <img src="assets/images/logo.gif" class="img-responsive">
+@endsection
+
+@section('banner')
+    <section class="about-banner text-center">
+        <div class="inner-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-content">
+                        <h1>Register Page</h1>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
 
 @section('content')
 <div class="container">
