@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('logo')
     <img src="assets/images/logo.gif" class="img-responsive">
