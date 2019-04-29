@@ -25,3 +25,6 @@ Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::get('/menu', 'HomeController@menu')->name('menu');
 Route::get('/single-blog', 'HomeController@singleBlog')->name('single-blog');
 
+Route::get('/dashboard', 'AdminController@index')->name('dashboard');
+
+
