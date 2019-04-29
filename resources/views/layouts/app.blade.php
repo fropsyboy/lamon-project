@@ -90,6 +90,12 @@
                                 @if(Request::is('cart'))
                                     <li><a href="{{ url('/cart') }}"><i class="fa fa-shopping-cart"></i></a></li>
                                 @endif
+                                <li>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" >
+                                        {{ csrf_field() }}
+                                        <button>Log Out</button>
+                                    </form>
+                            </li>
                               </ul>
                             </div><!--/.nav-collapse -->
                         </div>
