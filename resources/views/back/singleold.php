@@ -3,16 +3,12 @@
 
 <div id="page-wrapper">
     <div class="main-page compose">
-        <h2 class="title1">Compose Mail Page</h2>
+        <h2 class="title1">{{$product->name}}</h2>
         <div class="col-md-4 compose-left">
             <div class="folder widget-shadow">
                 <ul>
-                    <li class="head">Messages  ({{$count}})</li>
-                    @foreach($supports as $support)
-                    <li class="head">{{$support->subject}}  </li>
-                        @endforeach
-
-
+                    <li class="head">Quantity  ({{$product->quantity}})</li>
+            
                 </ul>
             </div>
 
@@ -20,7 +16,7 @@
         <div class="col-md-8 compose-right widget-shadow">
             <div class="panel-default">
                 <div class="panel-heading">
-                    Compose New Message
+                {{$product->name}}
                 </div>
                 <div class="panel-body">
                     @if(Session::has('msg'))
