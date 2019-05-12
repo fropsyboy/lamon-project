@@ -26,5 +26,8 @@ Route::get('/menu', 'HomeController@menu')->name('menu');
 Route::get('/single-blog', 'HomeController@singleBlog')->name('single-blog');
 
 Route::get('/dashboard', 'AdminController@index')->name('dashboard');
+Route::post('/addProduct', 'AdminController@addProduct')->name('addProduct');
+Route::get('/chgStatus/{id}/{status}', 'AdminController@chgStatus')->name('chgStatus');
+Route::get('/viewProduct/{id}', 'AdminController@viewProduct')->name('viewProduct');
 
 
